@@ -1,0 +1,6 @@
+unit test:
+  image: node:10
+  stage: test
+  script:
+    - npm i --progress=false
+    - npm run test:unit
