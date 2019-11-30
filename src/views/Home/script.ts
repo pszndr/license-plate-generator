@@ -1,8 +1,8 @@
-import HelloWorld from "@/components/HelloWorld/index.vue"
+import { Component, Vue } from "vue-property-decorator"
 
-export default {
-  name: "home",
-  components: {
-    HelloWorld
-  }
-}
+import PlateViewer from "@/components/PlateViewer/index.vue"
+
+@Component({
+  components: { PlateViewer }
+})
+export default class Home extends Vue {}

@@ -39,7 +39,7 @@ touch index.vue script.ts styles.sass template.pug test.spec.ts
 printf '<template src="./template.pug" lang="pug" />\n<script src="./script.ts" lang="ts" />\n<style src="./styles.sass" lang="sass" scoped />\n' > index.vue
 
 # Initialize vue component in .ts file
-printf 'import { Component, Vue } from "vue-property-decorator"\n\n@Component\nexport default class %s extends Vue {\n}\n' ${2} > script.ts
+printf 'import { Component, Vue } from "vue-property-decorator"\n\n@Component\nexport default class %s extends Vue {}\n' ${2} > script.ts
 
 # Write a simple test in test.spec.ts
 printf 'import { shallowMount } from "@vue/test-utils"\nimport { expect } from "chai"\n\nimport %s from "./index.vue"\n\ndescribe("%s", () => {\n  it("mounts", () => {\n    const wrapper = shallowMount(%s)\n    expect(wrapper && wrapper.isVueInstance()).to.be.true\n  })\n})\n' ${2} ${2} ${2} > test.spec.ts
