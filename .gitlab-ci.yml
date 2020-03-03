@@ -1,6 +1,7 @@
-unit test:
+unit test client:
   image: node:10
   stage: test
   script:
+    - cd client
     - npm i --progress=false
-    - npm run test:unit
+    - npm run test

@@ -1,29 +1,59 @@
-# license-plate-generator
+# License Plate Generator
 
-## Project setup
+## Server setup
+
+Inside `/server` folder:
+
+### Install dependencies
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Starts up a server with live-reloading for development
+
 ```
-npm run serve
+npm start
 ```
 
-### Compiles and minifies for production
+## Client setup
+
+Inside `/client` folder:
+
+### Install dependencies
+
 ```
-npm run build
+npm install
 ```
 
-### Run your unit tests
+### Starts up a server with live-reloading for development
+
 ```
-npm run test:unit
+npm start
+```
+
+### Run unit tests
+
+```
+npm run test
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
-### Customize configuration
+### Customize vue configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Building the app
+
+In the root project folder:
+
+```
+npm run build
+```
+
+This will generate executables inside the `/build` directory
