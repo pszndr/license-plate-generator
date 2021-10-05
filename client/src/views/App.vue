@@ -1,3 +1,13 @@
+<template lang="pug">
+#app
+  nav
+    router-link(to="/") Home
+    | &nbsp;
+    router-link(to="/settings") Settings
+  router-view
+</template>
+
+<style lang="sass">
 *
   box-sizing: border-box
 
@@ -12,6 +22,7 @@ html, body
   -moz-osx-font-smoothing: grayscale
   width: 100%
   height: 100%
+  background-color: palegoldenrod
 
   & > div
     width: 100%
@@ -21,3 +32,4 @@ html, body
     position: absolute
     top: 0
     right: 0
+</style>

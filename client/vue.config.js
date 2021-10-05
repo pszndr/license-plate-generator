@@ -3,6 +3,6 @@ module.exports = {
     config.module
       .rule("pug")
       .use("pug-plain-loader")
-      .loader("pug-plain-loader")
+      .loader("pug-plain-loader");
   }
-}
+};
