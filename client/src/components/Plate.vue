@@ -20,15 +20,14 @@ export default {
   display: flex
   align-items: center
   justify-content: center
-  padding-top: 24px
-  font-family: monospace
-  font-size: calc(92px + 4vw)
-  font-weight: 500
+  padding-top: calc(24px + 2vw)
+  font-family: cargo2
+  font-size: calc(74px + 5vw)
   letter-spacing: 4px
   background: #fafafa
   color: #111
-  border: 7px solid #111
-  border-radius: 7px
+  border: 10px solid #111
+  border-radius: 24px
   position: relative
 
   &:before
@@ -37,6 +36,8 @@ export default {
     top: 0
     left: 0
     width: 100%
-    height: 32px
-    background: #014da5
+    height: calc(24px + 2vw)
+    background: #0636a2
+    border-top-left-radius: 12px
+    border-top-right-radius: 12px
 </style>
