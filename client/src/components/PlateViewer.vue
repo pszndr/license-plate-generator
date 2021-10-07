@@ -46,6 +46,11 @@ export default {
     disconnect() {
       this.$log.debug("disconnected from socket");
     }
+  },
+  watch: {
+    latestPlate() {
+      document.title = this.latestPlate || "License Plate Generator";
+    }
   }
 };
 </script>
