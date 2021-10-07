@@ -1,6 +1,6 @@
 {
   "name": "license-plate-generator",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "A simple web-based license plate generator",
   "main": "server/main.js",
   "scripts": {
