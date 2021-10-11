@@ -1,9 +1,10 @@
-import API from "@/utils/API";
-import App from "@/views/App";
-import router from "@/router";
 import Vue from "vue";
 import VueLogger from "vuejs-logger";
 import VueSocketIO from "vue-socket.io";
+
+import router from "@/router";
+import API from "@/utils/API";
+import App from "@/views/App";
 
 Vue.config.productionTip = false;
 
