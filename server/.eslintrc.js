@@ -7,7 +7,7 @@ module.exports = {
   },
   extends: "eslint:recommended",
   rules: {
-    strict: 2,
+    strict: 0,
     indent: 0,
     "linebreak-style": 0,
     quotes: 0,
@@ -40,4 +40,4 @@ module.exports = {
     "no-unused-vars": ["error", { vars: "all", args: "none" }],
     "no-sparse-arrays": 1
   }
-}
+};

@@ -1,6 +1,6 @@
 import Vue from "vue";
-import VueSocketIO from "vue-socket.io";
 import VueLogger from "vuejs-logger";
+import VueSocketIO from "vue-socket.io";
 
 import router from "@/router";
 import API from "@/utils/API";

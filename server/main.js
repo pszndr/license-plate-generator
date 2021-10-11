@@ -1,5 +1,3 @@
-"use strict";
-
 const yargs = require("yargs");
 const express = require("express");
 const cors = require("cors");
@@ -45,28 +43,16 @@ const API_PREFIX = "/api";
 let latestPlate = "";
 
 // API routes
-app.get(`${API_PREFIX}/settings`, function (_req, res) {
-  console.log("/settings");
+app.get(`${API_PREFIX}/settings`, (_req, res) => {
   res.status(200).json({ port: PORT });
 });
 
-app.get(`${API_PREFIX}/latest`, function (_req, res) {
-  console.log("/latest");
+app.get(`${API_PREFIX}/latest`, (_req, res) => {
   res.status(200).json({ latestPlate });
 });
 
-// Log client connections
-io.on("connection", function (socket) {
-  console.log("client connected:", socket.client.conn.remoteAddress);
-  socket.on("disconnect", function () {
-    console.log("client disconnected:", socket.client.conn.remoteAddress);
-  });
-});
-
 // Create websocket
-server.listen(PORT, function () {
-  console.log(`Server is active, listening on port ${PORT}`);
-});
+server.listen(PORT);
 
 app.use(express.static(path.join(__dirname, "static")));
 

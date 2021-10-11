@@ -6,9 +6,9 @@
 path="$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )"
 
 # Build client
-cd ${path}/client && npm run build
+cd "${path}/client" && npm run build
 
 # Move built client to server/static
-mv ${path}/client/dist ${path}/server/static
+mv "${path}/client/dist" "${path}/server/static"
 
-cd ${path} && npm run pkg
+cd "${path}" && npm run pkg
