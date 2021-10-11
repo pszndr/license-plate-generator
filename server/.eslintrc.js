@@ -40,4 +40,4 @@ module.exports = {
     "no-unused-vars": ["error", { vars: "all", args: "none" }],
     "no-sparse-arrays": 1
   }
-}
+};
