@@ -7,7 +7,7 @@ module.exports = {
   },
   extends: "eslint:recommended",
   rules: {
-    strict: 2,
+    strict: 0,
     indent: 0,
     "linebreak-style": 0,
     quotes: 0,

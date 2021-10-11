@@ -6,7 +6,10 @@
 export default {
   name: "Plate",
   props: {
-    plate: String
+    plate: {
+      default: "",
+      type: String
+    }
   }
 };
 </script>
